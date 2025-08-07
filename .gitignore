@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hexo generated files
+db.json
+public/
+.deploy*/
+*.log
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+.idea/
+.vscode/
+
+# Docker-related
+*.tar
+*.pid
+*.sock
+
+# Docker build cache
+**/__pycache__/
+**/.pytest_cache/
+*.img
+*.iso
+
+# Environment files
+.env
+.env.*
+
+# Build artifacts
+dist/
+out/
+coverage/
+
