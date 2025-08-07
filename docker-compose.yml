@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  ubuntu-ssh-hexo:
+    build: .
+    container_name: ubuntu-ssh-hexo
+    ports:
+      - "2222:22"
+      - "4000:4000"
+    environment:
+      SSH_USER: bloguser      # 普通用户名
+      SSH_PASSWORD: blog@123  # 普通用户密码
+      ROOT_PASSWORD: root@123 # root 密码
+    volumes:
+      - ./templates/bashrc:/etc/skel/.bashrc:ro
+      - ./templates/profile:/etc/skel/.profile:ro
+    restart: always

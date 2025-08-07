@@ -1,0 +1,2 @@
+# ~/.profile: executed by Bourne-compatible login shells.
+export PATH="$HOME/bin:$PATH"
