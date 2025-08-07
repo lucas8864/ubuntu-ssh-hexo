@@ -8,7 +8,7 @@
 - ✅ Supervisor 管理 SSH 与 Hexo 服务
 - ✅ Hexo 自动初始化、安装依赖并启动博客服务
 - ✅ 默认开放端口：
-  - `22`：SSH 登录端口（映射至容器的 22）
+  - `2222`：SSH 登录端口（映射至容器的 22）
   - `4000`：Hexo 博客访问端口
 
 ## 🚀 快速开始
@@ -42,7 +42,7 @@ docker run -it --rm --name ubuntu-ssh-hexo     -e USERNAME=bloguser \
 - 镜像名称：`lalucas/ubuntu-ssh-hexo:latest`
 - CPU：0.2 Core
 - 内存：256M
-- 容器端口：2222 & 4000
+- 容器端口：22 & 4000
 - 本地存储：1G 映射至 `/home/bloguser`
 - 环境变量：
   ```env
