@@ -46,7 +46,7 @@ else
 fi
 
 # 启动 Hexo 服务监听所有 IP
-echo 7.动 Hexo 服务监听所有 IP
+echo 7.启动 Hexo 服务监听所有 IP
 cd /home/${USERNAME}/blog
 sudo -u "${USERNAME}" hexo server -i 0.0.0.0 -p 4000 &
 
